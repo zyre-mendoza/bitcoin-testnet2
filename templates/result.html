@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Result</title>
+</head>
+<body>
+    <h1>Transaction Result</h1>
+    <p>Transaction ID: {{ tx_id }}</p>
+    
+    <!-- Display deducted tax amounts -->
+    <h2>Deducted Tax Amounts:</h2>
+    <ul>
+        <li>PhilHealth Tax: {{ tax_deductions['philhealth_tax'] }} BTC</li>
+        <li>Pag-IBIG Tax: {{ tax_deductions['pagibig_tax'] }} BTC</li>
+        <li>SSS Tax: {{ tax_deductions['sss_tax'] }} BTC</li>
+    </ul>
+</body>
+</html>
